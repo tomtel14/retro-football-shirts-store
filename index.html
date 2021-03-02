@@ -1,0 +1,567 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/retrofootballshirts.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <title>Buy Retro Football Shirts Online</title>
+</head>
+
+<body>
+
+    <!------------------------------- HEADER ------------------------------->
+    <header id="header">
+
+        <!------------------------------- NAVBAR ------------------------------->
+        <nav class="navbar navbar-expand-lg px-4">
+            <a href="#" class="navbar-brand">
+                <img src="img/logo.jpg" alt="Retro Football Shirts logo">
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myNavbar">
+                <span class="toggler-icon">
+                    <i class="fas fa-bars"></i>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item active">
+                        <a href="#header" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="#store" class="nav-link">Store</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="#services" class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="#offers" class="nav-link">Offers</a>
+                    </li>
+                </ul>
+                <div class="nav-info-items d-none d-lg-flex">
+                    <div class="nav-info align-items-center d-flex justify-content-between mx-lg-5">
+                        <span class="info-icon mx-lg-3">
+                            <i class="fas fa-phone"></i>
+                        </span>
+                        <p class="mb-0">+44 123 456 7890</p>
+                    </div>
+                    <div id="cart-info"
+                        class="nav-info align-items-center cart-info d-flex justify-content-between mx-lg-5">
+                        <span class="cart-info__icon mr-lg-3">
+                            <i class="fas fa-shopping-cart"></i>
+                        </span>
+                        <p class="mb-0">
+                            <span id="item-count">0</span>
+                            items - £
+                            <span class="item-total">
+                                00.00
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!------------------------------- END OF NAVBAR ------------------------------->
+
+        <!------------------------------- BANNER ------------------------------->
+        <div class="container-fluid">
+            <div class="row max-height justify-content-center align-items-center">
+                <div class="col-10 mx-auto banner text-center">
+                    <h1>Welcome to <br><strong class="banner-title">Retro Football Shirts</strong></h1>
+                    <a href="#store" class="btn banner-link text-uppercase my-2">explore</a>
+                </div>
+
+                <div class="cart" id="cart">
+                    <!--
+                    <div class="cart-item d-flex justify-content-between my-3">
+                        <img src="img-cart/1acmilan.jpg" class="img-fluid rounded-circle" id="item-img" alt="">
+                        <div class="item-text">
+                            <p id="cart-item-title" class="font-weight-bold mb-0">Cart item</p>
+                            <span>£</span>
+                            <span id="cart-item-price" class="cart-item-price mb-0">59.99</span>
+                        </div>
+                        <a href="#" id="cart-item-remove" class="cart-item-remove align-self-center">
+                            <i class="fas fa-trash"></i>
+                        </a>
+                    </div>
+                    -->
+
+
+                    <div class="cart-total-container d-flex justify-content-around mt-5">
+                        <h5>Total</h5>
+                        <h5>£ <strong id="cart-total" class="font-weight-bold">00.00</strong></h5>
+                    </div>
+
+                    <div class="cart-buttons-container mt-3 d-flex justify-content-between">
+                        <a href="#" id="clear-cart" class="clear-cart btn btn-black text-uppercase">clear cart</a>
+                        <a href="#" id="checkout" class="btn btn-checkout text-uppercase">checkout</a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <!------------------------------- END OF BANNER ------------------------------->
+
+    </header>
+    <!------------------------------- END OF HEADER ------------------------------->
+
+
+    <!------------------------------- ABOUT SECTION ------------------------------->
+    <section class="about py-5" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-10 mx-auto col-md-6 my-5">
+                    <h1>About <strong class="banner-title">Us</strong></h1>
+                    <p class="my-4 text-muted w-75 letters-spaced">
+                        We are the UK's largest suppliers of authentic and original football shirts. Our range includes
+                        kits
+                        from teams across Europe's biggest leagues dating back to the 1970's. Our stock includes shirts
+                        worn by professionals as well as used shirts which remain in excellent condition.
+                    </p>
+                    <a href="#store" class="btn btn-black text-uppercase">Explore</a>
+                </div>
+                <div class="col-10 mx-auto col-md-6 my-5 align-self-center">
+                    <div class="about-img__container">
+                        <img src="img/aboutus.png" class="img-fluid about-img"
+                            alt="collection of retro football shirts">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!------------------------------- END OF ABOUT SECTION ------------------------------->
+
+
+    <!------------------------------- STORE SECTION ------------------------------->
+    <section id="store" class="store py-5">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-10 mx-auto col-sm-6 text-center">
+                    <h1>Our <strong class="banner-title">Store</strong></h1>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-8 mx-auto d-flex justify-content-around my-2 sortBtn flex-wrap">
+                    <a href="" class="btn btn-black text-uppercase filter-btn m-2" data-id="all">all</a>
+                    <a href="" class="btn btn-black text-uppercase filter-btn m-2" data-id="premier">Premier
+                        League</a>
+                    <a href="" class="btn btn-black text-uppercase filter-btn m-2" data-id="laliga">La Liga</a>
+                    <a href="" class="btn btn-black text-uppercase filter-btn m-2" data-id="seriea">Serie A</a>
+                    <a href="" class="btn btn-black text-uppercase filter-btn m-2" data-id="bundesliga">Bundesliga</a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-10 mx-auto col-md-6 mt-3">
+                    <form id="search-shirts">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text search-box" id="search-icon">
+                                    <i class="fas fa-search"></i>
+                                </span>
+                            </div>
+                            <input type=" text" class="form-control" placeholder="search..." id="search-item">
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="row store-items" id="store-items">
+                <!--
+                <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="sweets">
+                    <div class="card single-item">
+                        <div class="img-container">
+                            <img src="img/1acmilan.jpg" class="card-img-top store-img" alt="">
+                            <span class="store-item-icon">
+                                <i onclick="iconClickHandler()" class="fas fa-shopping-cart"></i>
+                            </span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-text d-flex justify-content-between">
+                                <h5 id="store-item-name"> AC Milan Shirt</h5>
+                                <h5 class="store-item-value">£ <strong id="store-item-price"
+                                        class="font-weight-bold">59.99</strong></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="sweets">
+                    <div class="card single-item">
+                        <div class="img-container">
+                            <img src="img/1arsenal.jpg" class="card-img-top store-img" alt="">
+                            <span class="store-item-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-text d-flex justify-content-between">
+                                <h5 id="store-item-name"> Arsenal Shirt/h5>
+                                <h5 class="store-item-value">£ <strong id="store-item-price"
+                                        class="font-weight-bold">49.99</strong></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="sweets">
+                    <div class="card single-item">
+                        <div class="img-container">
+                            <img src="img/1fiorentina.jpg" class="card-img-top store-img" alt="">
+                            <span class="store-item-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-text d-flex justify-content-between">
+                                <h5 id="store-item-name"> Fiorentina Shirt</h5>
+                                <h5 class="store-item-value">£ <strong id="store-item-price"
+                                        class="font-weight-bold">34.99</strong></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="sweets">
+                    <div class="card single-item">
+                        <div class="img-container">
+                            <img src="img/1blackburn.jpg" class="card-img-top store-img" alt="">
+                            <span class="store-item-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-text d-flex justify-content-between">
+                                <h5 id="store-item-name"> Blackburn Shirt/h5>
+                                <h5 class="store-item-value">£ <strong id="store-item-price"
+                                        class="font-weight-bold">44.99</strong></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="sweets">
+                    <div class="card single-item">
+                        <div class="img-container">
+                            <img src="img/1valencia.jpg" class="card-img-top store-img" alt="">
+                            <span class="store-item-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-text d-flex justify-content-between">
+                                <h5 id="store-item-name"> Valencia Shirt</h5>
+                                <h5 class="store-item-value">£ <strong id="store-item-price"
+                                        class="font-weight-bold">29.99</strong></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="sweets">
+                    <div class="card single-item">
+                        <div class="img-container">
+                            <img src="img/1sampdoria.jpg" class="card-img-top store-img" alt="">
+                            <span class="store-item-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-text d-flex justify-content-between">
+                                <h5 id="store-item-name"> Sampdoria Shirt</h5>
+                                <h5 class="store-item-value">£ <strong id="store-item-price"
+                                        class="font-weight-bold">49.99</strong></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="sweets">
+                    <div class="card single-item">
+                        <div class="img-container">
+                            <img src="img/1bayern.jpg" class="card-img-top store-img" alt="">
+                            <span class="store-item-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-text d-flex justify-content-between">
+                                <h5 id="store-item-name"> Bayern Munich Shirt</h5>
+                                <h5 class="store-item-value">£ <strong id="store-item-price"
+                                        class="font-weight-bold">39.99</strong></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="sweets">
+                    <div class="card single-item">
+                        <div class="img-container">
+                            <img src="img/1werder.jpg" class="card-img-top store-img" alt="">
+                            <span class="store-item-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-text d-flex justify-content-between">
+                                <h5 id="store-item-name"> Werder Bremen Shirt</h5>
+                                <h5 class="store-item-value">£ <strong id="store-item-price"
+                                        class="font-weight-bold">25.99</strong></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="sweets">
+                    <div class="card single-item">
+                        <div class="img-container">
+                            <img src="img/1astonvilla.jpg" class="card-img-top store-img" alt="">
+                            <span class="store-item-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-text d-flex justify-content-between">
+                                <h5 id="store-item-name"> Aston Villa Shirt</h5>
+                                <h5 class="store-item-value">£ <strong id="store-item-price"
+                                        class="font-weight-bold">27.99</strong></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="sweets">
+                    <div class="card single-item">
+                        <div class="img-container">
+                            <img src="img/1intermilan.jpg" class="card-img-top store-img" alt="">
+                            <span class="store-item-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-text d-flex justify-content-between">
+                                <h5 id="store-item-name"> Inter Milan Shirt</h5>
+                                <h5 class="store-item-value">£ <strong id="store-item-price"
+                                        class="font-weight-bold">48.99</strong></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="sweets">
+                    <div class="card single-item">
+                        <div class="img-container">
+                            <img src="img/1barcelona.jpg" class="card-img-top store-img" alt="">
+                            <span class="store-item-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-text d-flex justify-content-between">
+                                <h5 id="store-item-name"> Barcelona Shirt</h5>
+                                <h5 class="store-item-value">£ <strong id="store-item-price"
+                                        class="font-weight-bold">55.99</strong></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="sweets">
+                    <div class="card single-item">
+                        <div class="img-container">
+                            <img src="img/1atletico.jpg" class="card-img-top store-img" alt="">
+                            <span class="store-item-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-text d-flex justify-content-between">
+                                <h5 id="store-item-name"> Atletico Madrid</h5>
+                                <h5 class="store-item-value">£ <strong id="store-item-price"
+                                        class="font-weight-bold">29.99</strong></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                -->
+
+
+            </div>
+
+        </div>
+
+    </section>
+    <!------------------------------- END OF STORE SECTION ------------------------------->
+
+
+    <!------------------------------- SERVICES SECTION ------------------------------->
+    <section id="services" class="services py-5">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4 text-center my-3">
+                    <i class="fas fa-3x fa-gift"></i>
+                    <h6 class="text-uppercase my-3 service-title">gift-wrapping</h6>
+                    <p class="w-75 mx-auto text-left letters-spaced">
+                        Our retro shirts make the perfect gift! Select this option in the checkout, and we will wrap
+                        your purchase in high-quality gift wrap
+                        before securely packaging it for delivery.
+                    </p>
+                </div>
+
+                <div class="col-md-4 text-center my-3">
+                    <i class="fas fa-3x fa-tshirt"></i>
+                    <h6 class="text-uppercase my-3 service-title">sell your shirt</h6>
+                    <p class="w-75 mx-auto text-left letters-spaced">
+                        We're always on the lookout for old retro shirts. If you own one and are keen to sell it in
+                        return for cash, feel free to get in touch so that we can make you an offer.
+                    </p>
+                </div>
+
+                <div class="col-md-4 text-center my-3">
+                    <i class="fas fa-3x fa-shipping-fast"></i>
+                    <h6 class="text-uppercase my-3 service-title">free returns</h6>
+                    <p class="w-75 mx-auto text-left letters-spaced">
+                        If you're unhappy with your shirt, we offer free exchanges and returns to all customers within
+                        30 days of purchasing. Terms and conditions apply.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!------------------------------- END OF SERVICES SECTION ------------------------------->
+
+
+    <!------------------------------- OFFERS SECTION ------------------------------->
+    <section id="offers" class="offers py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-10 mx-auto col-sm-6 text-center">
+                    <h1>Special <strong class="banner-title">Offers</strong></h1>
+                </div>
+            </div>
+            <div class="row" id="special-offers">
+
+                <!--
+                <div class="col-11 mx-auto col-md-6 col-lg-4 my-4 text-center">
+                    <h3 class="py-3">Eric Cantona Shirt</h3>
+                    <div class="text-muted reduced-spacing">
+                        <p class="my-2">1992-94 Manchester United Third Shirt</p>
+                        <p class="my-2">Condition: Excellent</p>
+                        <p class="my-2">Size: Medium</p>
+                        <p class="mb-3">Was <span class="old-price">$45.99</span> Now <span class="new-price">£35.99</span</p>
+                        <div class="rel-img-container">
+                            <img src="img/1cantonaback.jpg" class="img-fluid shirt-img" alt="">
+                            <img src="img/1cantona.jpg" class="img-fluid shirt-img-behind" alt="">
+                        </div>
+                        <p class="flip-over mt-2"><i class="fas fa-hand-pointer mr-2"></i>Click image to see reverse</p>
+                        <button type="button" class="btn btn-order-green mb-3">Order Now</button>
+
+                    </div>
+                </div>
+
+                <div class="col-11 mx-auto col-md-6 col-lg-4 my-4 text-center">
+                    <h3 class="py-3">Paul Gascoigne Shirt</h3>
+                    <div class="text-muted reduced-spacing">
+                        <p class="my-2">1992-94 1997-99 Rangers Home Shirt</p>
+                        <p class="my-2">Condition: Very good</p>
+                        <p class="my-2">Size: Large</p>
+                        <p class="mb-3">Was <span class="old-price">$36.99</span> Now <span class="new-price">£28.99</span</p>
+                        <div class="rel-img-container">
+                            <img src="img/1gazzaback.jpg" class="img-fluid shirt-img" alt="">
+                            <img src="img/1gazza.jpg" class="img-fluid shirt-img-behind" alt="">
+                        </div>
+                        <p class="flip-over mt-2"><i class="fas fa-hand-pointer mr-2"></i>Click image to see reverse</p>
+                        <button type="button" class="btn btn-order-green mb-3">Order Now</button>
+
+                    </div>
+                </div>
+
+                <div class="col-11 mx-auto col-md-6 col-lg-4 my-4 text-center">
+                    <h3 class="py-3">Alessandro Del Piero Shirt</h3>
+                    <div class="text-muted reduced-spacing">
+                        <p class="my-2">2002-03 Juventus Home Shirt</p>
+                        <p class="my-2">Condition: Excellent</p>
+                        <p class="my-2">Size: Large</p>
+                        <p class="mb-3">Was <span class="old-price">$39.99</span> Now <span class="new-price">£31.99</span</p>
+                        <div class="rel-img-container">
+                            <img src="img/1delpieroback.jpg" class="img-fluid shirt-img" alt="">
+                            <img src="img/1delpiero.jpg" class="img-fluid shirt-img-behind" alt="">
+                        </div>
+                        <p class="flip-over mt-2"><i class="fas fa-hand-pointer mr-2"></i>Click image to see reverse</p>
+                        <button type="button" class="btn btn-order-green mb-3">Order Now</button>
+
+                    </div>
+                </div>
+                -->
+
+            </div>
+        </div>
+    </section>
+    <!------------------------------- OFFERS SECTION ------------------------------->
+
+
+    <!------------------------------- FOOTER ------------------------------->
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 footer-title py-5">
+                    <h1 class="text-center"><strong class="banner-title">Retro Football Shirts</strong></h1>
+                    <div class="footer-icons mt-5 d-flex justify-content-around flex-wrap">
+                        <a href="#" class="footer-icon">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="footer-icon">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="footer-icon">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="footer-icon">
+                            <i class="fab fa-google-plus"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6 footer-contact text-center p-5">
+                    <h3 class="mb-5">Contact</h3>
+                    <p class="d-flex flex-wrap">
+                        <span class="mr-4 footer-icon">
+                            <i class="fas fa-map"></i>
+                        </span>
+                        <span>Whetstone N20, London</span>
+                    </p>
+                    <p class="d-flex flex-wrap">
+                        <span class="mr-4 footer-icon">
+                            <i class="fas fa-phone"></i>
+                        </span>
+                        <span>+44 123 456 7890</span>
+                    </p>
+                    <p class="d-flex flex-wrap">
+                        <span class="mr-4 footer-icon">
+                            <i class="fas fa-envelope"></i>
+                        </span>
+                        <span>sales@retrofootballshirts.com</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!------------------------------- END OF FOOTER ------------------------------->
+
+
+    <script src="js/retrofootballshirts.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

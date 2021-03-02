@@ -1,0 +1,386 @@
+/* -------------------------- GLOBAL STYLES -------------------------- */
+
+@import url("https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@1,400;1,700&display=swap");
+
+:root {
+  --mainGreen: #10A820;
+  --mainWhite: #fff;
+  --mainBlack: #000;
+  --mainGrey: rgb(238, 238, 238);
+}
+
+body {
+  font-family: 'Cuprum', 'sans-serif'; 
+  font-weight: normal;
+  font-style: italic;
+  background: var(--mainWhite);
+  color: var(--mainBlack);
+}
+
+.btn-green {
+  color: var(--mainGreen) !important;
+  border-color: var(--mainGreen) !important;
+}
+
+.btn-green:hover {
+  color: var(--mainBlack) !important;
+  background-color: var(--mainGreen) !important;
+}
+
+.btn-checkout {
+  background-color: transparent;
+  color: var(--mainBlack);
+  border-color: var(--mainBlack);
+}
+
+.btn-checkout:hover {
+  background-color: var(--mainGreen);
+  color: var(--mainWhite);
+  border-color: var(--mainGreen);
+}
+
+.btn-black {
+  color: var(--mainBlack) !important;
+  border-color: var(--mainBlack) !important;
+}
+
+.btn-black:hover {
+  color: var(--mainGreen) !important;
+  background-color: var(--mainBlack) !important;
+}
+
+.btn-order-green {
+  color: var(--mainGreen) !important;
+  border-color: var(--mainGreen) !important;
+}
+
+.btn-order-green:hover {
+  background: var(--mainGreen) !important;
+  color: var(--mainWhite) !important;
+}
+
+.letters-spaced {
+  letter-spacing: 1px;
+  word-spacing: 0.2rem;
+}
+
+.reduced-spacing {
+  letter-spacing: 1px;
+}
+
+
+/* -------------------------- NAVBAR incl. SHOPPING CART -------------------------- */
+
+.navbar-toggler {
+  outline: none !important;
+  /* have to use this to override bootstrap */
+}
+
+.toggler-icon {
+  font-size: 2.5rem;
+  color: var(--mainGreen);
+}
+
+.nav-link {
+  color: var(--mainGreen);
+  transition: all .4s ease-in-out;
+  font-size: 1.5rem;
+}
+
+.nav-link:hover {
+  color: var(--mainBlack);
+}
+
+.cart-info__icon {
+  color: var(--mainBlack);
+  cursor: pointer;
+}
+
+.cart-info {
+  border: 0.1rem solid var(--mainBlack);
+  color: var(--mainBlack);
+  border-radius: 0.25rem;
+  padding: 0.4rem 0.6rem;
+  cursor: pointer;
+}
+
+.cart-info:hover {
+  background-color: var(--mainGreen);
+  border-color: var(--mainGreen);
+  color: var(--mainWhite);
+}
+
+.cart-info:hover .cart-info__icon {
+  color: var(--mainWhite);
+}
+
+.max-height {
+  /* set min-height to 100vh - height of navbar (get this from inspecting page) */
+  min-height: calc(100vh - 76px);
+  background: url('../img/stadium.jpeg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;
+  opacity: 0.9;
+}
+
+.cart {
+  position: absolute;
+  min-height: 10rem;
+  max-height: 30rem;
+  background: rgba(255, 255, 255, 0.5);
+  top: 0;
+  right: 0;
+  transition: all 0.3s ease-in-out;
+  /* width: 18rem;
+  padding: 2rem 1.5rem; */
+  /* the two rules below are both needed to hide .cart properly */
+  width: 0;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.show-cart {
+  /* took the below two properties from above */
+  width: 18rem;
+  padding: 2rem 1.5rem;
+  transform: rotateY(-360deg);
+}
+
+.cart-item-remove {
+  color: var(--mainBlack);
+  transition: all 0.3s ease-in-out;
+}
+
+.cart-item-remove:hover {
+  transform: scale(1.1);
+  color: red;
+}
+
+.cart-item {
+  transition: all 2s ease-in-out;
+}
+
+.cart-item-price {
+  font-size: 0.8rem;
+}
+
+
+/* -------------------------- BANNER -------------------------- */
+
+.banner {
+  color: var(--mainWhite);
+  margin-top: -4rem;
+}
+
+.banner-title {
+  color: var(--mainGreen);
+  font-size: 3rem;
+}
+
+.banner-link {
+  font-size: 1.5rem;
+  color: var(--mainWhite);
+  opacity: 0.8;
+  border: 0.2rem solid var(--mainWhite);
+}
+
+.banner-link:hover {
+  color: var(--mainWhite);
+  opacity: 1;
+}
+
+
+/* -------------------------- ABOUT US -------------------------- */
+
+.about-img__container {
+  position: relative;
+}
+
+/* the outline is created in css using the before psuedo selector as opposed to being written in the html */
+.about-img__container::before {
+  /* always need to have content propety */
+  content: '';
+  position: absolute;
+  top: -1.5rem;
+  left: -1.5rem;
+  width: 100%;
+  height: 100%;
+  outline: 0.3rem solid var(--mainGreen);
+  z-index: -1;
+  transition: all .2s linear;
+}
+
+.about-img__container:hover:before {
+  top: 0;
+  left: 0;
+}
+
+.about-img {
+  border: 1px solid var(--mainGreen);
+}
+
+
+/* -------------------------- STORE -------------------------- */
+
+.store {
+  background: var(--mainGrey);
+}
+
+.input-group-prepend {
+  cursor: pointer;
+}
+
+.search-box {
+  background: var(--mainGreen);
+  color: var(--mainBlack);
+}
+
+.single-item {
+  transition: all 0.3s linear;
+}
+
+.single-item:hover {
+  box-shadow: 0 10px 15px rgb(0, 0, 0);
+}
+
+.img-container {
+  position: relative;
+  /* uncomment the below to see what happens when hovering over the images */
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.store-img {
+  transition: all .5s ease-in-out;
+}
+
+.img-container:hover .store-img {
+  /* this zoom effect works well because of the hidden overflow above */
+  transform: scale(1.2);
+}
+
+.store-item-icon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0.75rem;
+  background: var(--mainGreen);
+  border-top-left-radius: 1rem;
+  transition: all 0.5s ease-in-out;
+  /* below hides the icon by moving it 100% to the right and 100% down */
+  transform: translate(100%, 100%);
+}
+
+.img-container:hover .store-item-icon {
+  transform: translate(0, 0)
+}
+
+.store-item-icon:hover {
+  color: var(--mainWhite);
+}
+
+.card-body {
+  border-top: var(--mainBlack) solid 1px;
+}
+
+
+/* -------------------------- SERVICES -------------------------- */
+
+.services {
+  color: var(--mainWhite);
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/tackle.jpg')center/cover fixed no-repeat;
+}
+
+.service-title {
+  letter-spacing: 0.5rem;
+}
+
+
+/* -------------------------- OFFERS -------------------------- */
+
+.rel-img-container {
+  position: relative;
+  margin: 0 auto;
+  border: red 1px solid;
+  border-radius: 5px;
+}
+
+.shirt-img {
+  width: 250px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.shirt-img-behind {
+  width: 250px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -125px;
+  margin-top: -125px;
+  z-index: -10;
+  cursor: pointer;
+}
+
+.old-price {
+  text-decoration: line-through;
+}
+
+.new-price {
+  color: red;
+}
+
+.flip-over i{
+  color: var(--mainBlack);
+}
+
+
+/* -------------------------- FOOTER -------------------------- */
+
+.footer-title {
+  background: var(--mainBlack);
+}
+
+.footer-contact {
+  background: var(--mainGrey);
+}
+
+.footer-icon {
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: var(--mainGreen);
+  transition: all 0.3s ease-in-out;
+}
+
+.footer-icon .fab {
+  font-size: 1.5rem;
+  color: var(--mainWhite);
+  transition: all 0.3s ease-in-out;
+}
+
+.footer-icon .fab:hover {
+  color: var(--mainGreen);
+}
+
+.footer-icon:hover {
+  color: var(--mainBlack);
+}
+
+
+
+
+
+
+
+
+
+
+
